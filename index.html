@@ -1,22 +1,23 @@
-```html
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Éclipse Restaurant</title>
 
-  <!-- Fonts -->
+  <!-- Шрифты -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-  <!-- Elegant font -->
+  <!-- Элегантный -->
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&display=swap" rel="stylesheet">
 
-  <!-- Modern font -->
+  <!-- Современный -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 
   <style>
+
     *{
       margin:0;
       padding:0;
@@ -36,7 +37,7 @@
       letter-spacing:2px;
     }
 
-    /* HERO */
+    /* Главный экран */
 
     .hero{
       height:100vh;
@@ -46,6 +47,7 @@
       flex-direction:column;
       text-align:center;
       position:relative;
+
       background:
       radial-gradient(circle at center, rgba(90,50,150,0.35), transparent 35%),
       linear-gradient(to bottom, #000000, #070b16, #000000);
@@ -56,10 +58,13 @@
       height:260px;
       border-radius:50%;
       background:black;
+
       box-shadow:
       0 0 40px #5b5bcf,
       0 0 80px rgba(255,255,255,0.15);
+
       position:absolute;
+
       animation:pulse 5s infinite ease-in-out;
     }
 
@@ -67,9 +72,11 @@
       0%{
         transform:scale(1);
       }
+
       50%{
         transform:scale(1.05);
       }
+
       100%{
         transform:scale(1);
       }
@@ -97,13 +104,21 @@
     .btn{
       margin-top:40px;
       padding:16px 40px;
+
       border:1px solid silver;
+
       background:rgba(255,255,255,0.08);
+
       backdrop-filter:blur(10px);
+
       color:white;
+
       font-size:16px;
+
       border-radius:16px;
+
       cursor:pointer;
+
       transition:0.3s;
     }
 
@@ -112,7 +127,7 @@
       transform:translateY(-3px);
     }
 
-    /* SECTION */
+    /* Секции */
 
     section{
       padding:100px 10%;
@@ -131,22 +146,30 @@
       max-width:700px;
     }
 
-    /* INTERIOR */
+    /* Галерея */
 
     .gallery{
       margin-top:60px;
+
       display:grid;
+
       grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
       gap:25px;
     }
 
     .card{
       height:320px;
+
       border-radius:25px;
+
       background:
       linear-gradient(135deg,#111827,#1e1b4b);
+
       border:1px solid rgba(255,255,255,0.1);
+
       backdrop-filter:blur(10px);
+
       transition:0.4s;
     }
 
@@ -154,21 +177,29 @@
       transform:translateY(-10px) scale(1.02);
     }
 
-    /* MENU */
+    /* Меню */
 
     .menu-grid{
       margin-top:60px;
+
       display:grid;
+
       grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
       gap:30px;
     }
 
     .menu-card{
       padding:35px;
+
       border-radius:25px;
+
       background:rgba(255,255,255,0.05);
+
       border:1px solid rgba(255,255,255,0.08);
+
       backdrop-filter:blur(12px);
+
       transition:0.3s;
     }
 
@@ -196,7 +227,7 @@
       line-height:1.7;
     }
 
-    /* CONTACT */
+    /* Контакты */
 
     .contact{
       text-align:center;
@@ -219,16 +250,21 @@
       text-decoration:underline;
     }
 
-    /* FOOTER */
+    /* Подвал */
 
     footer{
       padding:30px;
       text-align:center;
+
       border-top:1px solid rgba(255,255,255,0.08);
+
       color:#777;
       font-size:14px;
+
       background:black;
     }
+
+    /* Адаптив */
 
     @media(max-width:768px){
 
@@ -245,40 +281,43 @@
       }
 
     }
+
   </style>
 </head>
 <body>
 
-  <!-- HERO -->
+  <!-- Главный экран -->
 
   <section class="hero">
 
     <div class="eclipse"></div>
 
     <div class="hero-content">
-      <h1 class="logo">Éclipse</h1>
+
+      <h1 class="logo">ÉCLIPSE</h1>
 
       <p class="subtitle">
-        Fusion cuisine with futuristic aesthetics inspired by the mystery
-        of the night city and cosmic elegance.
+        Авторский ресторан fusion-кухни с футуристичной эстетикой
+        ночного города и космоса.
       </p>
 
-      <button class="btn">Reserve a Table</button>
+      <button class="btn">Забронировать стол</button>
+
     </div>
 
   </section>
 
-  <!-- ABOUT -->
+  <!-- О ресторане -->
 
   <section>
 
-    <h2 class="section-title">Luxury Atmosphere</h2>
+    <h2 class="section-title">Атмосфера роскоши</h2>
 
     <p class="section-text">
-      Éclipse combines premium fusion cuisine, minimalistic interior design,
-      dark aesthetics and emotional immersion. The restaurant creates
-      a unique luxury experience for guests who appreciate style,
-      visual presentation and modern gastronomy.
+      Éclipse объединяет премиальную кухню, минималистичный интерьер,
+      тёмную эстетику и атмосферу эмоционального погружения.
+      Пространство создано для гостей, которые ценят стиль,
+      визуальную эстетику и новые гастрономические впечатления.
     </p>
 
     <div class="gallery">
@@ -292,73 +331,93 @@
 
   </section>
 
-  <!-- MENU -->
+  <!-- Меню -->
 
   <section>
 
-    <h2 class="section-title">Cosmic Menu</h2>
+    <h2 class="section-title">Космическое меню</h2>
 
     <div class="menu-grid">
 
       <div class="menu-card">
-        <div class="menu-category">Starters ✦</div>
+
+        <div class="menu-category">Закуски ✦</div>
+
         <h3 class="dish">Moon Pasta</h3>
+
         <p class="dish-desc">
-          Creamy pasta with truffle sauce and parmesan cheese.
+          Сливочная паста с трюфельным соусом и пармезаном.
         </p>
+
       </div>
 
       <div class="menu-card">
-        <div class="menu-category">Main Orbit ✦</div>
+
+        <div class="menu-category">Основные блюда ✦</div>
+
         <h3 class="dish">Galaxy Steak</h3>
+
         <p class="dish-desc">
-          Premium beef steak with dark pepper sauce and vegetables.
+          Премиальный стейк с перечным соусом и овощами.
         </p>
+
       </div>
 
       <div class="menu-card">
-        <div class="menu-category">Lunar Desserts ✦</div>
+
+        <div class="menu-category">Десерты ✦</div>
+
         <h3 class="dish">Black Velvet</h3>
+
         <p class="dish-desc">
-          Chocolate dessert with berry filling and silver decoration.
+          Шоколадный десерт с ягодной начинкой
+          и серебристым декором.
         </p>
+
       </div>
 
       <div class="menu-card">
-        <div class="menu-category">Cosmic Drinks ✦</div>
+
+        <div class="menu-category">Напитки ✦</div>
+
         <h3 class="dish">Galaxy Lemonade</h3>
+
         <p class="dish-desc">
-          Lavender lemonade with edible glitter and лед.
+          Лавандовый лимонад с пищевыми блёстками и льдом.
         </p>
+
       </div>
 
     </div>
 
   </section>
 
-  <!-- CONTACT -->
+  <!-- Контакты -->
 
   <section class="contact">
 
-    <h2 class="section-title">Find Us</h2>
+    <h2 class="section-title">Контакты</h2>
 
     <div class="contact-info">
-      Almaty, Kazakhstan<br>
+
+      Алматы, Казахстан<br>
+
       +7 (777) 777-77-77<br>
+
       eclipse.restaurant@gmail.com<br><br>
 
       Instagram:
       <a href="#" class="instagram">@eclipse.restaurant</a>
+
     </div>
 
   </section>
 
-  <!-- FOOTER -->
+  <!-- Подвал -->
 
   <footer>
-    © 2026 Éclipse Restaurant — All Rights Reserved
+    © 2026 Éclipse Restaurant — Все права защищены
   </footer>
 
 </body>
 </html>
-```
