@@ -553,6 +553,257 @@
                 grid-template-columns: 1fr;
             }
         }
+        <style>
+
+/* =========================
+   MOBILE ADAPTIVE FIX
+========================= */
+
+@media(max-width: 768px){
+
+    /* GLOBAL */
+
+    *{
+        max-width: 100%;
+    }
+
+    body{
+        overflow-x: hidden;
+    }
+
+    html, body{
+        width: 100%;
+    }
+
+    /* NAVBAR */
+
+    .nav-container{
+        width: calc(100% - 20px);
+        padding: 15px 20px;
+        top: 10px;
+        border-radius: 20px;
+        justify-content: center;
+    }
+
+    .nav-logo{
+        font-size: 18px;
+        letter-spacing: 4px;
+    }
+
+    .nav-links{
+        display: none;
+    }
+
+    /* HERO */
+
+    .screen-hero{
+        grid-template-columns: 1fr;
+        min-height: auto;
+        height: auto;
+        padding: 130px 20px 60px;
+        gap: 40px;
+        text-align: center;
+    }
+
+    .hero-right-visual{
+        display: none;
+    }
+
+    .main-tag{
+        font-size: 9px;
+        letter-spacing: 4px;
+        margin-bottom: 20px;
+    }
+
+    .massive-title{
+        font-size: 42px;
+        line-height: 1.05;
+        margin-bottom: 25px;
+    }
+
+    .curator-text{
+        font-size: 14px;
+        line-height: 1.7;
+        max-width: 100%;
+    }
+
+    /* ARCHITECTURE SECTION */
+
+    .architecture-section{
+        grid-template-columns: 1fr;
+        padding: 80px 20px;
+        gap: 40px;
+    }
+
+    .arch-photo-wrapper{
+        grid-column: 1 / -1;
+    }
+
+    .arch-photo{
+        height: 300px;
+    }
+
+    .arch-card-overlay{
+        position: relative;
+        right: auto;
+        bottom: auto;
+        margin-top: 20px;
+        padding: 25px;
+        max-width: 100%;
+    }
+
+    .arch-content{
+        grid-column: 1 / -1;
+        padding-left: 0;
+    }
+
+    .meta-num{
+        font-size: 50px;
+        margin-bottom: -10px;
+    }
+
+    .section-title{
+        font-size: 30px !important;
+        line-height: 1.2;
+    }
+
+    .section-text{
+        font-size: 14px !important;
+    }
+
+    /* MENU */
+
+    .split-menu-section{
+        grid-template-columns: 1fr;
+        height: auto;
+    }
+
+    .menu-visual-panel{
+        display: none;
+    }
+
+    .menu-list-panel{
+        padding: 40px 20px;
+        gap: 10px;
+    }
+
+    .interactive-row{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+        padding: 25px 0;
+    }
+
+    .interactive-row:hover{
+        padding-left: 0;
+    }
+
+    .row-left-info h3{
+        font-size: 22px;
+        margin-bottom: 6px;
+    }
+
+    .row-left-info p{
+        font-size: 13px;
+        max-width: 100%;
+        line-height: 1.6;
+    }
+
+    .row-price{
+        font-size: 18px;
+    }
+
+    /* BOOKING */
+
+    .booking-dashboard{
+        padding: 80px 20px;
+    }
+
+    .dashboard-grid{
+        grid-template-columns: 1fr;
+        padding: 30px 20px;
+        gap: 35px;
+    }
+
+    .dash-title h2{
+        font-size: 34px;
+        line-height: 1.1;
+    }
+
+    .dash-title p{
+        font-size: 14px;
+    }
+
+    .quick-book-form{
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .submit-cyber-btn{
+        grid-column: 1 / -1;
+        width: 100%;
+        padding: 18px;
+        font-size: 11px;
+    }
+
+    /* FOOTER */
+
+    .cyber-footer{
+        padding: 60px 20px 30px;
+    }
+
+    .footer-main-row{
+        grid-template-columns: 1fr;
+        gap: 40px;
+        margin-bottom: 50px;
+    }
+
+    .brand-block h3{
+        font-size: 22px;
+        letter-spacing: 5px;
+    }
+
+    .footer-bottom{
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+        font-size: 11px;
+    }
+
+    /* COSMIC BACKGROUND */
+
+    .nebula,
+    .nebula-2{
+        width: 300px;
+        height: 300px;
+        filter: blur(60px);
+    }
+
+}
+
+/* EXTRA SMALL DEVICES */
+
+@media(max-width: 480px){
+
+    .massive-title{
+        font-size: 34px;
+    }
+
+    .dash-title h2{
+        font-size: 28px;
+    }
+
+    .section-title{
+        font-size: 24px !important;
+    }
+
+    .row-left-info h3{
+        font-size: 20px;
+    }
+
+}
+
+</style>
     </style>
 </head>
 <body>
